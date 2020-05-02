@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('../components/head') %>
+    </head>
+    <body>
+        <header>
+            <%- include('../components/header') %>
+        </header>
+        <main>
+            <h1>Senator</h1>
+            <h4>Details:</h4>
+            <p>State:<%= foundSenator.state %></p>
+            <p>Rank:<%= foundSenator.senator_rank_label %></p>
+            <p>Party:<%= foundSenator.party %></p>
+            <p>Senator <%= foundSenator.person.lastname %>'s Website: <a href='<%= foundSenator.website %>' target='_blank'>link</a></p>
+            <p>Stats Website: <a href='<%= foundSenator.person.link %>' target='_blank'>link</a></p>
+        </main>
+    </body>
+</html>
